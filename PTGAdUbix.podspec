@@ -31,15 +31,15 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "fancy" => "ptg_all@fancydigital.com.cn" }
 
-  spec.source       = { :git => "https://github.com/PTGAd/FancyAd.git", :tag => "#{spec.version }" }
+  spec.source       = { :git => "https://github.com/PTGAd/PTGAdUbix", :tag => "#{spec.version }" }
 
 
-  spec.platform     = :ios, "9.0"
+  spec.platform     = :ios, "11.0"
   spec.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate'
   spec.libraries = 'c++', 'resolv', 'z', 'sqlite3'
-  spec.vendored_frameworks =  'Frameworks/FancyAdSDK.framework'
+  spec.vendored_frameworks =  'Frameworks/PTGAdSDK.framework'
     
-  spec.resources = "Frameworks/FancyAdSDK.bundle"
+  spec.resources = "Frameworks/PTGAdSDK.bundle"
 
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   spec.xcconfig = {
