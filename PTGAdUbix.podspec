@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PTGAdUbix"
-  spec.version      = "2.2.621"
+  spec.version      = "2.2.641"
   spec.summary      = "A short description of PTGAdUbix."
 
 
