@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
+
+
+def share_pods
+  pod 'Masonry'
+  pod 'SDWebImage'
+  pod 'CocoaDebug'
+  pod 'YYCategories'
+  pod 'WechatOpenSDK-XCFramework'
+  pod 'PTGAdUbix','2.2.750'
+end
+
+target 'PTGSDKDemo' do
+  post_install do |installer|
+        installer.generated_projects.each do |project|
+          project.targets.each do |target|
+              target.build_configurations.each do |config|
+                  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+               end
+          end
+        end
+      end
+
+  share_pods
+
+  target 'PTGSDKDemoTests' do
+    inherit! :search_paths
+  end
+  
+end
