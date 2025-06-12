@@ -15,6 +15,7 @@
 #import "PTGNativeExpressAd.h"
 #import "PTGSourceAdType.h"
 #import "PTGBidReason.h"
+#import "PTGNativeExpressRewardVideoAd.h"
 
 
 //! Project version number for PTGAdSDK.
