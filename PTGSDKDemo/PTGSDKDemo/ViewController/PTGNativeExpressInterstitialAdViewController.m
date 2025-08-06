@@ -96,9 +96,9 @@
 
 - (void)ptg_nativeExpresInterstitialAdDidClick:(PTGNativeExpressInterstitialAd *)interstitialAd {
     NSLog(@"插屏广告被点击%@",interstitialAd);
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [interstitialAd closureInterstitialAd];
-    });
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [interstitialAd closureInterstitialAd];
+//    });
 }
 
 - (void)ptg_nativeExpresInterstitialAdDidClose:(PTGNativeExpressInterstitialAd *)interstitialAd {
