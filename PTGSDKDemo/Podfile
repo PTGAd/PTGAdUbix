@@ -9,7 +9,7 @@ def share_pods
   pod 'CocoaDebug'
   pod 'YYCategories'
   pod 'WechatOpenSDK-XCFramework'
-  pod 'PTGAdUbix','2.2.810'
+  pod 'PTGAdUbix','2.2.811'
 end
 
 target 'PTGSDKDemo' do
