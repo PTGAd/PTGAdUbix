@@ -33,6 +33,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:PTGViewController.new];
     [self.window makeKeyAndVisible];
+    [PTGSDKManager syncSetAppKey:@"45271" appSecret:@"Y6yyc3zyP3EO9ol8"];
+    [self.splashAd loadAd];
     return YES;
 }
 

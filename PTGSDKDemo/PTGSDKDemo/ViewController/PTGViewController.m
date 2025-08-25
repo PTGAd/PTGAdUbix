@@ -50,7 +50,7 @@ UITableViewDataSource
     ];
     [self addChildViewsAndLayout];
     
-    [self configAdSDK];
+//    [self configAdSDK];
     
 }
 
