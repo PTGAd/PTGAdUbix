@@ -30,6 +30,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CGSize size = CGSizeMake(self.view.bounds.size.width, self.type == PTGNativeExpressAdTypeSelfRender ? 80 : 200);
+     NSString *placementId = self.type == PTGNativeExpressAdTypeSelfRender ?  @"900002175" : @"900000399";
+    _manager = [[PTGNativeExpressAdManager alloc] initWithPlacementId:placementId
+                                                                 type:self.type
+                                                               adSize:size];
+    _manager.delegate = self;
+    _manager.currentViewController = self;
     self.ads = @[];
     self.view.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.2];
     [self addChildViewsAndLayout];
@@ -255,18 +262,6 @@
 
 
 #pragma mark - get -
-- (PTGNativeExpressAdManager *)manager {
-    if (!_manager) { //  457 900000231
-        CGSize size = CGSizeMake(self.view.bounds.size.width, self.type == PTGNativeExpressAdTypeSelfRender ? 80 : 200);
-         NSString *placementId = self.type == PTGNativeExpressAdTypeSelfRender ?  @"900002175" : @"900000399";
-        _manager = [[PTGNativeExpressAdManager alloc] initWithPlacementId:placementId
-                                                                     type:self.type
-                                                                   adSize:size];
-        _manager.delegate = self;
-        _manager.currentViewController = self;
-    }
-    return _manager;
-}
 
 - (UIButton *)loadButton {
     if (!_loadButton) {
