@@ -52,12 +52,12 @@
 }
 
 - (void)initAdSDK {
-    NSString *appid = self.appIdTextFiled.text.length > 0 ? self.appIdTextFiled.text : @"45271";
-    NSString *appSecret = self.keyTextFiled.text.length > 0 ? self.keyTextFiled.text : @"Y6yyc3zyP3EO9ol8";
+    NSString *appid = self.appIdTextFiled.text.length > 0 ? self.appIdTextFiled.text : @"46453";
+    NSString *appSecret = self.keyTextFiled.text.length > 0 ? self.keyTextFiled.text : @"2JxD1ai4X20J2vVe";
     
     /// appKey  Ptg后台创建的媒体⼴告位ID
     /// appSecret Ptg后台创建的媒体⼴告位密钥
-    //  45227 1r8hOksXStGASHrp com.bmlchina.driver
+    //  45227 1r8hOksXStGASHrp? com.bmlchina.driver
     NSString *idfa = self.idfaTextFiled.text.length > 0 ? self.idfaTextFiled.text : [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
     NSString *caid = self.caidTextFiled.text;               // 广协caid 建议传递，提升填充及收益
     NSString *caidVersion = self.caidVersionTextFiled.text;   // 你的广协caid veriosn 提升填充及收益

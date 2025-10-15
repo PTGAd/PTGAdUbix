@@ -69,6 +69,7 @@
 /// 在此方法中调用showAdFromRootViewController 展示激励广告
 - (void)ptg_rewardVideoAdDidLoad:(PTGNativeExpressRewardVideoAd *)rewardVideoAd {
     self.statusLabel.text = @"加载成功";
+    NSLog(@"激励广告素材 = %@",rewardVideoAd.adMaterial);
     NSLog(@"激励广告加载成功%@",rewardVideoAd);
 //    [rewardVideoAd showAdFromRootViewController:self];
 }
@@ -116,10 +117,10 @@
 #pragma mark - get -
 - (PTGNativeExpressRewardVideoAd *)rewardVideoAd {
     if (!_rewardVideoAd) {
-        PTGRewardedVideoModel *model = [PTGRewardedVideoModel new];
-        model.rewardName = @"奖励名称";
-        model.rewardAmount = 400;
-        _rewardVideoAd = [[PTGNativeExpressRewardVideoAd alloc] initWithPlacementId:@"900000400" rewardedVideoModel:model];
+//        PTGRewardedVideoModel *model = [PTGRewardedVideoModel new];
+//        model.rewardName = @"奖励名称";
+//        model.rewardAmount = 400;
+        _rewardVideoAd = [[PTGNativeExpressRewardVideoAd alloc] initWithPlacementId:@"900002904" rewardedVideoModel:nil];
         _rewardVideoAd.delegate = self;
     }
     return _rewardVideoAd;

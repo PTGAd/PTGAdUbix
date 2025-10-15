@@ -9,7 +9,6 @@
 #import <Masonry/Masonry.h>
 #import <PTGAdSDK/PTGAdSDK.h>
 #import "PTGFeedViewController.h"
-#import "PTGNativeExpressDrawViewController.h"
 #import "PTGNativeExpressBannerViewController.h"
 #import "PTGNativeExpressInterstitialAdViewController.h"
 #import "PTGNativeExpressRewardVideoAdViewController.h"
@@ -42,7 +41,6 @@ UITableViewDataSource
     [self.manager requestWhenInUseAuthorization];
     self.items = @[
         @"开屏",
-        @"开屏自渲染",
         @"信息流",
         @"横幅",
         @"插屏",
@@ -120,16 +118,13 @@ UITableViewDataSource
     if (indexPath.row == 0) {
         viewController = [[PTGSplashViewController alloc] init];
     } else if(indexPath.row == 1) {
-        PTGSplashSelfRenderViewController *vc = [[PTGSplashSelfRenderViewController alloc] init];
-        viewController = vc;
-    } else if(indexPath.row == 2) {
         PTGFeedViewController *vc = [[PTGFeedViewController alloc] init];
         viewController = vc;
-    } else if(indexPath.row == 3) {
+    } else if(indexPath.row == 2) {
         viewController = [[PTGNativeExpressBannerViewController alloc] init];
-    } else if(indexPath.row == 4) {
+    } else if(indexPath.row == 3) {
         viewController = [[PTGNativeExpressInterstitialAdViewController alloc] init];
-    } else if (indexPath.row == 5) {
+    } else if (indexPath.row == 4) {
         viewController = [[PTGNativeExpressRewardVideoAdViewController alloc] init];
     }
     viewController ? [self.navigationController pushViewController:viewController animated:YES] : nil;

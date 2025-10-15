@@ -24,12 +24,12 @@
 
 - (void)updateUI:(PTGNativeExpressAd *)nativeAd {
     self.nativeAd = nativeAd;
-    NSString *image = nativeAd.imageUrls.firstObject.url;
+    NSString *image = nativeAd.adObject.adData.imageUrls.firstObject.url;
     if (image) {
         [self.imageView sd_setImageWithURL:[NSURL URLWithString:image]];
     }
 //    self.shakeLabel.hidden = nativeAd.;
-    [nativeAd setSplashContainer:self clickableViews:@[self.hotAreaButton]];
+    [nativeAd.adObject setSplashContainer:self clickableViews:@[self.hotAreaButton]];
     
     if ([self.timer isValid]) {
         [self.timer invalidate];

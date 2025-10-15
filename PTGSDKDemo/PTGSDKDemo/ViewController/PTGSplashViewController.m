@@ -17,10 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.textField.placeholder = @"请输入广告id，默认900000397";
-    self.textField.text = @"900000397";
-    self.shakeTextFiled.text = @"0";
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.textField.placeholder = @"请输入广告id，默认900002906";
+    self.textField.text = @"900002906";
 }
 
 
@@ -37,7 +36,7 @@
     logo.center = bottomView.center;
     [bottomView addSubview:logo];
     
-    NSString *placementId = self.textField.text.length > 0 ? self.textField.text : @"900000397";
+    NSString *placementId = self.textField.text.length > 0 ? self.textField.text : @"900002906";
     _splashAd = [[PTGSplashAd alloc] initWithPlacementId:placementId];
     _splashAd.delegate = self;
     _splashAd.bottomView = bottomView;
@@ -61,11 +60,23 @@
 /// 开屏加载成功
 - (void)ptg_splashAdDidLoad:(PTGSplashAd *)splashAd {
     NSLog(@"开屏广告%s",__func__);
+    NSLog(@"开屏素材 = %@,",splashAd.adMaterial);
 }
 
 /// 开屏加载失败
 - (void)ptg_splashAd:(PTGSplashAd *)splashAd didFailWithError:(NSError *)error {
     NSLog(@"开屏广告请求失败%@",error);
+}
+
+
+/// 开屏素材加载成功
+- (void)ptg_splashAdMaterialDidLoad:(PTGSplashAd *)splashAd {
+    NSLog(@"开屏广告素材加载成功");
+}
+
+/// 开屏素材加载失败
+- (void)ptg_splashAdMaterial:(PTGSplashAd *)splashAd didFailWithError:(NSError * _Nullable)error {
+    NSLog(@"开屏广告素材加载失败%@",error);
 }
 
 /// 开屏广告被点击了

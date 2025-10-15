@@ -13,6 +13,7 @@
 #import <WebKit/WebKit.h>
 #import "WXApi.h"
 #import "WXApiManager.h"
+
 //#if DEBUG
 //#import "FLEXManager.h"
 //#endif
@@ -28,12 +29,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [PTGSDKManager syncSetAppKey:@"45271" appSecret:@"Y6yyc3zyP3EO9ol8"];
+    [self.splashAd loadAd];
+   
     [WXApi registerApp:@"wxd930ea5d5a258f4f" universalLink:@"https://help.wechat.com/sdksample/"];
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:PTGViewController.new];
     [self.window makeKeyAndVisible];
-    [PTGSDKManager syncSetAppKey:@"45271" appSecret:@"Y6yyc3zyP3EO9ol8"];
     [self.splashAd loadAd];
     return YES;
 }
@@ -90,7 +93,7 @@
         [bottomView addSubview:logo];
         bottomView.backgroundColor = [UIColor whiteColor];
         
-        _splashAd = [[PTGSplashAd alloc] initWithPlacementId:@"900000397"];
+        _splashAd = [[PTGSplashAd alloc] initWithPlacementId:@"900002906"];
         _splashAd.delegate = self;
         _splashAd.bottomView = bottomView;
     }

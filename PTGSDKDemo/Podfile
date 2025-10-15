@@ -1,15 +1,16 @@
 # Uncomment the next line to define a global platform for your project
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '11.0'
+platform :ios, '12.0'
 
 
 def share_pods
   pod 'Masonry'
+  pod 'WechatOpenSDK'
+  pod 'CocoaAsyncSocket'
   pod 'SDWebImage'
-  pod 'CocoaDebug'
+  pod 'CocoaDebug','~> 1.7.7'
   pod 'YYCategories'
-  pod 'WechatOpenSDK-XCFramework'
-  pod 'PTGAdUbix','2.2.840'
+  pod 'MJRefresh'
 end
 
 target 'PTGSDKDemo' do

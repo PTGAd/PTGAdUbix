@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseAdViewController : UIViewController
 
-@property(nonatomic,strong) UITextField *shakeTextFiled;
 @property(nonatomic,strong) UITextField *textField;
 @property(nonatomic,strong) UIButton *loadButton;
 @property(nonatomic,strong) UIButton *showButton;

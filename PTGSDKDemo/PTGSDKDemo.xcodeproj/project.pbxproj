@@ -10,7 +10,6 @@
 		83C7EADF4BC582CC3AD89385 /* libPods-PTGSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 048CA5C693A1C2CF9EA063C2 /* libPods-PTGSDKDemo.a */; };
 		84282B9525DE330E00D8F7A3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84282B9425DE330E00D8F7A3 /* File.swift */; };
 		847563DF25CF95E600AECEA7 /* PTGNativeExpressFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847563DE25CF95E600AECEA7 /* PTGNativeExpressFeedViewController.m */; };
-		8475643D25CFC4D100AECEA7 /* PTGNativeExpressDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475643C25CFC4D100AECEA7 /* PTGNativeExpressDrawViewController.m */; };
 		8475644325CFC72E00AECEA7 /* PTGNativeExpressBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475644225CFC72E00AECEA7 /* PTGNativeExpressBannerViewController.m */; };
 		8475645325CFCE1200AECEA7 /* PTGNativeExpressInterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475645225CFCE1200AECEA7 /* PTGNativeExpressInterstitialAdViewController.m */; };
 		8475645925CFD17B00AECEA7 /* PTGNativeExpressRewardVideoAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475645825CFD17B00AECEA7 /* PTGNativeExpressRewardVideoAdViewController.m */; };
@@ -58,6 +57,18 @@
 		9E2F101128D5B9C0001EB840 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2F101028D5B9C0001EB840 /* UIKit.framework */; };
 		9E2F101328D5B9D9001EB840 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2F101228D5B9D1001EB840 /* libsqlite3.tbd */; };
 		9E3D65A22D02D7DE009B759B /* PTGFeedRenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D65A12D02D7DE009B759B /* PTGFeedRenderCell.m */; };
+		9E5F2B5A2E9F9A02009D475A /* PTGAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9E5F2B572E9F9A02009D475A /* PTGAdSDK.bundle */; };
+		9E5F2B5B2E9F9A02009D475A /* PTGAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5F2B582E9F9A02009D475A /* PTGAdSDK.framework */; };
+		9E708A7E2E9F46DD00A61CEF /* PTGNativeExpressCollectionWaterfallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E708A772E9F46DD00A61CEF /* PTGNativeExpressCollectionWaterfallViewController.m */; };
+		9E708A7F2E9F46DD00A61CEF /* PTGCollectionRenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E708A6B2E9F46DD00A61CEF /* PTGCollectionRenderCell.m */; };
+		9E708A802E9F46DD00A61CEF /* PTGNativeExpressCollectionHorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E708A732E9F46DD00A61CEF /* PTGNativeExpressCollectionHorizontalViewController.m */; };
+		9E708A812E9F46DD00A61CEF /* PTGNativeExpressInScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E708A792E9F46DD00A61CEF /* PTGNativeExpressInScrollViewController.m */; };
+		9E708A822E9F46DD00A61CEF /* PTGVideoControlDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E708A7D2E9F46DD00A61CEF /* PTGVideoControlDemoViewController.m */; };
+		9E708A832E9F46DD00A61CEF /* PTGFeedRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E708A6F2E9F46DD00A61CEF /* PTGFeedRenderView.m */; };
+		9E708A842E9F46DD00A61CEF /* PTGNativeExpressCollectionVerticalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E708A752E9F46DD00A61CEF /* PTGNativeExpressCollectionVerticalViewController.m */; };
+		9E708A852E9F46DD00A61CEF /* PTGTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E708A7B2E9F46DD00A61CEF /* PTGTableViewHeader.m */; };
+		9E708A862E9F46DD00A61CEF /* PTGNativeCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E708A712E9F46DD00A61CEF /* PTGNativeCountViewController.m */; };
+		9E708A872E9F46DD00A61CEF /* PTGFeedPeriodicRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E708A6D2E9F46DD00A61CEF /* PTGFeedPeriodicRequestViewController.m */; };
 		9E76B07D2CCF71FF0005DA9A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E76B07C2CCF71FF0005DA9A /* WebKit.framework */; };
 		9E76B08B2CCFBA710005DA9A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2F0FEA28D5B8CD001EB840 /* Security.framework */; };
 		9EA6881A2D77D8600029DDF7 /* PTGSplashSelfRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA688192D77D8600029DDF7 /* PTGSplashSelfRenderViewController.m */; };
@@ -110,8 +121,6 @@
 		84282B9925DE335D00D8F7A3 /* PTGSDKDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTGSDKDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		847563DD25CF95E600AECEA7 /* PTGNativeExpressFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGNativeExpressFeedViewController.h; sourceTree = "<group>"; };
 		847563DE25CF95E600AECEA7 /* PTGNativeExpressFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGNativeExpressFeedViewController.m; sourceTree = "<group>"; };
-		8475643B25CFC4D100AECEA7 /* PTGNativeExpressDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGNativeExpressDrawViewController.h; sourceTree = "<group>"; };
-		8475643C25CFC4D100AECEA7 /* PTGNativeExpressDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGNativeExpressDrawViewController.m; sourceTree = "<group>"; };
 		8475644125CFC72E00AECEA7 /* PTGNativeExpressBannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGNativeExpressBannerViewController.h; sourceTree = "<group>"; };
 		8475644225CFC72E00AECEA7 /* PTGNativeExpressBannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGNativeExpressBannerViewController.m; sourceTree = "<group>"; };
 		8475645125CFCE1200AECEA7 /* PTGNativeExpressInterstitialAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGNativeExpressInterstitialAdViewController.h; sourceTree = "<group>"; };
@@ -171,6 +180,28 @@
 		9E2F101628D5BA3E001EB840 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		9E3D65A02D02D7DE009B759B /* PTGFeedRenderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGFeedRenderCell.h; sourceTree = "<group>"; };
 		9E3D65A12D02D7DE009B759B /* PTGFeedRenderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGFeedRenderCell.m; sourceTree = "<group>"; };
+		9E5F2B572E9F9A02009D475A /* PTGAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PTGAdSDK.bundle; sourceTree = "<group>"; };
+		9E5F2B582E9F9A02009D475A /* PTGAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PTGAdSDK.framework; sourceTree = "<group>"; };
+		9E708A6A2E9F46DD00A61CEF /* PTGCollectionRenderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGCollectionRenderCell.h; sourceTree = "<group>"; };
+		9E708A6B2E9F46DD00A61CEF /* PTGCollectionRenderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGCollectionRenderCell.m; sourceTree = "<group>"; };
+		9E708A6C2E9F46DD00A61CEF /* PTGFeedPeriodicRequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGFeedPeriodicRequestViewController.h; sourceTree = "<group>"; };
+		9E708A6D2E9F46DD00A61CEF /* PTGFeedPeriodicRequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGFeedPeriodicRequestViewController.m; sourceTree = "<group>"; };
+		9E708A6E2E9F46DD00A61CEF /* PTGFeedRenderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGFeedRenderView.h; sourceTree = "<group>"; };
+		9E708A6F2E9F46DD00A61CEF /* PTGFeedRenderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGFeedRenderView.m; sourceTree = "<group>"; };
+		9E708A702E9F46DD00A61CEF /* PTGNativeCountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGNativeCountViewController.h; sourceTree = "<group>"; };
+		9E708A712E9F46DD00A61CEF /* PTGNativeCountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGNativeCountViewController.m; sourceTree = "<group>"; };
+		9E708A722E9F46DD00A61CEF /* PTGNativeExpressCollectionHorizontalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGNativeExpressCollectionHorizontalViewController.h; sourceTree = "<group>"; };
+		9E708A732E9F46DD00A61CEF /* PTGNativeExpressCollectionHorizontalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGNativeExpressCollectionHorizontalViewController.m; sourceTree = "<group>"; };
+		9E708A742E9F46DD00A61CEF /* PTGNativeExpressCollectionVerticalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGNativeExpressCollectionVerticalViewController.h; sourceTree = "<group>"; };
+		9E708A752E9F46DD00A61CEF /* PTGNativeExpressCollectionVerticalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGNativeExpressCollectionVerticalViewController.m; sourceTree = "<group>"; };
+		9E708A762E9F46DD00A61CEF /* PTGNativeExpressCollectionWaterfallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGNativeExpressCollectionWaterfallViewController.h; sourceTree = "<group>"; };
+		9E708A772E9F46DD00A61CEF /* PTGNativeExpressCollectionWaterfallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGNativeExpressCollectionWaterfallViewController.m; sourceTree = "<group>"; };
+		9E708A782E9F46DD00A61CEF /* PTGNativeExpressInScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGNativeExpressInScrollViewController.h; sourceTree = "<group>"; };
+		9E708A792E9F46DD00A61CEF /* PTGNativeExpressInScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGNativeExpressInScrollViewController.m; sourceTree = "<group>"; };
+		9E708A7A2E9F46DD00A61CEF /* PTGTableViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGTableViewHeader.h; sourceTree = "<group>"; };
+		9E708A7B2E9F46DD00A61CEF /* PTGTableViewHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGTableViewHeader.m; sourceTree = "<group>"; };
+		9E708A7C2E9F46DD00A61CEF /* PTGVideoControlDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGVideoControlDemoViewController.h; sourceTree = "<group>"; };
+		9E708A7D2E9F46DD00A61CEF /* PTGVideoControlDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGVideoControlDemoViewController.m; sourceTree = "<group>"; };
 		9E76B07C2CCF71FF0005DA9A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		9EA688182D77D8600029DDF7 /* PTGSplashSelfRenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGSplashSelfRenderViewController.h; sourceTree = "<group>"; };
 		9EA688192D77D8600029DDF7 /* PTGSplashSelfRenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGSplashSelfRenderViewController.m; sourceTree = "<group>"; };
@@ -230,6 +261,7 @@
 				9E2F0FD728D5B7E2001EB840 /* CoreMotion.framework in Frameworks */,
 				9E2F0FF928D5B943001EB840 /* CoreMedia.framework in Frameworks */,
 				9E2F0FEB28D5B8CD001EB840 /* Security.framework in Frameworks */,
+				9E5F2B5B2E9F9A02009D475A /* PTGAdSDK.framework in Frameworks */,
 				9E2F0FD928D5B7F2001EB840 /* DeviceCheck.framework in Frameworks */,
 				9E2F101128D5B9C0001EB840 /* UIKit.framework in Frameworks */,
 				9E2F100328D5B971001EB840 /* MapKit.framework in Frameworks */,
@@ -352,6 +384,7 @@
 		84C24F9025CD40BB00398052 /* PTGSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9E5F2B592E9F9A02009D475A /* Frameworks */,
 				9ED9FFC22DA4C18100413BEA /* PTGSDKDemo.entitlements */,
 				84282B9925DE335D00D8F7A3 /* PTGSDKDemo-Bridging-Header.h */,
 				84C24F9125CD40BB00398052 /* AppDelegate.h */,
@@ -396,17 +429,44 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9E5F2B592E9F9A02009D475A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E5F2B572E9F9A02009D475A /* PTGAdSDK.bundle */,
+				9E5F2B582E9F9A02009D475A /* PTGAdSDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		9ED9449E2DDAFB41000A012A /* Native */ = {
 			isa = PBXGroup;
 			children = (
+				9E708A6A2E9F46DD00A61CEF /* PTGCollectionRenderCell.h */,
+				9E708A6B2E9F46DD00A61CEF /* PTGCollectionRenderCell.m */,
+				9E708A6C2E9F46DD00A61CEF /* PTGFeedPeriodicRequestViewController.h */,
+				9E708A6D2E9F46DD00A61CEF /* PTGFeedPeriodicRequestViewController.m */,
+				9E708A6E2E9F46DD00A61CEF /* PTGFeedRenderView.h */,
+				9E708A6F2E9F46DD00A61CEF /* PTGFeedRenderView.m */,
+				9E708A702E9F46DD00A61CEF /* PTGNativeCountViewController.h */,
+				9E708A712E9F46DD00A61CEF /* PTGNativeCountViewController.m */,
+				9E708A722E9F46DD00A61CEF /* PTGNativeExpressCollectionHorizontalViewController.h */,
+				9E708A732E9F46DD00A61CEF /* PTGNativeExpressCollectionHorizontalViewController.m */,
+				9E708A742E9F46DD00A61CEF /* PTGNativeExpressCollectionVerticalViewController.h */,
+				9E708A752E9F46DD00A61CEF /* PTGNativeExpressCollectionVerticalViewController.m */,
+				9E708A762E9F46DD00A61CEF /* PTGNativeExpressCollectionWaterfallViewController.h */,
+				9E708A772E9F46DD00A61CEF /* PTGNativeExpressCollectionWaterfallViewController.m */,
+				9E708A782E9F46DD00A61CEF /* PTGNativeExpressInScrollViewController.h */,
+				9E708A792E9F46DD00A61CEF /* PTGNativeExpressInScrollViewController.m */,
+				9E708A7A2E9F46DD00A61CEF /* PTGTableViewHeader.h */,
+				9E708A7B2E9F46DD00A61CEF /* PTGTableViewHeader.m */,
+				9E708A7C2E9F46DD00A61CEF /* PTGVideoControlDemoViewController.h */,
+				9E708A7D2E9F46DD00A61CEF /* PTGVideoControlDemoViewController.m */,
 				9ED944982DDADA65000A012A /* PTGFeedViewController.h */,
 				9ED944992DDADA65000A012A /* PTGFeedViewController.m */,
 				9ED9449B2DDAFAF3000A012A /* PTGFeedDelayDisplayViewController.h */,
 				9ED9449C2DDAFAF3000A012A /* PTGFeedDelayDisplayViewController.m */,
 				9E3D65A02D02D7DE009B759B /* PTGFeedRenderCell.h */,
 				9E3D65A12D02D7DE009B759B /* PTGFeedRenderCell.m */,
-				8475643B25CFC4D100AECEA7 /* PTGNativeExpressDrawViewController.h */,
-				8475643C25CFC4D100AECEA7 /* PTGNativeExpressDrawViewController.m */,
 				847563DD25CF95E600AECEA7 /* PTGNativeExpressFeedViewController.h */,
 				847563DE25CF95E600AECEA7 /* PTGNativeExpressFeedViewController.m */,
 			);
@@ -433,8 +493,8 @@
 				84C24F8A25CD40BB00398052 /* Sources */,
 				84C24F8B25CD40BB00398052 /* Frameworks */,
 				84C24F8C25CD40BB00398052 /* Resources */,
+				BAD6770864BAD2A5B40D25BE /* [CP] Copy Pods Resources */,
 				9E5F232B2D9D042C008C030B /* Embed Frameworks */,
-				19F66BED1A39EBFC9E0E1C38 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -533,6 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C24FA125CD40BE00398052 /* LaunchScreen.storyboard in Resources */,
+				9E5F2B5A2E9F9A02009D475A /* PTGAdSDK.bundle in Resources */,
 				84C24F9E25CD40BE00398052 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,23 +615,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19F66BED1A39EBFC9E0E1C38 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PTGSDKDemo/Pods-PTGSDKDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PTGSDKDemo/Pods-PTGSDKDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PTGSDKDemo/Pods-PTGSDKDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7A5D07972555F823F1F30379 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +659,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BAD6770864BAD2A5B40D25BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PTGSDKDemo/Pods-PTGSDKDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PTGSDKDemo/Pods-PTGSDKDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PTGSDKDemo/Pods-PTGSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -629,12 +690,21 @@
 				9E3D65A22D02D7DE009B759B /* PTGFeedRenderCell.m in Sources */,
 				84C2501525CD45AC00398052 /* PTGViewController.m in Sources */,
 				8475644325CFC72E00AECEA7 /* PTGNativeExpressBannerViewController.m in Sources */,
+				9E708A7E2E9F46DD00A61CEF /* PTGNativeExpressCollectionWaterfallViewController.m in Sources */,
+				9E708A7F2E9F46DD00A61CEF /* PTGCollectionRenderCell.m in Sources */,
+				9E708A802E9F46DD00A61CEF /* PTGNativeExpressCollectionHorizontalViewController.m in Sources */,
+				9E708A812E9F46DD00A61CEF /* PTGNativeExpressInScrollViewController.m in Sources */,
+				9E708A822E9F46DD00A61CEF /* PTGVideoControlDemoViewController.m in Sources */,
+				9E708A832E9F46DD00A61CEF /* PTGFeedRenderView.m in Sources */,
+				9E708A842E9F46DD00A61CEF /* PTGNativeExpressCollectionVerticalViewController.m in Sources */,
+				9E708A852E9F46DD00A61CEF /* PTGTableViewHeader.m in Sources */,
+				9E708A862E9F46DD00A61CEF /* PTGNativeCountViewController.m in Sources */,
+				9E708A872E9F46DD00A61CEF /* PTGFeedPeriodicRequestViewController.m in Sources */,
 				84C24F9325CD40BB00398052 /* AppDelegate.m in Sources */,
 				84C24FA425CD40BE00398052 /* main.m in Sources */,
 				9EF09AE92CCE1F21003299E3 /* PTGSplashViewController.m in Sources */,
 				8475645325CFCE1200AECEA7 /* PTGNativeExpressInterstitialAdViewController.m in Sources */,
 				9EF09AE22CCDE1DE003299E3 /* BaseAdViewController.m in Sources */,
-				8475643D25CFC4D100AECEA7 /* PTGNativeExpressDrawViewController.m in Sources */,
 				9EF09AE62CCDEB1D003299E3 /* AdConfigViewController.m in Sources */,
 				84282B9525DE330E00D8F7A3 /* File.swift in Sources */,
 				9EA6881A2D77D8600029DDF7 /* PTGSplashSelfRenderViewController.m in Sources */,
