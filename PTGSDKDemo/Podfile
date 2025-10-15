@@ -11,6 +11,7 @@ def share_pods
   pod 'CocoaDebug','~> 1.7.7'
   pod 'YYCategories'
   pod 'MJRefresh'
+  pod 'PTGAdUbix','2.2.90'
 end
 
 target 'PTGSDKDemo' do
