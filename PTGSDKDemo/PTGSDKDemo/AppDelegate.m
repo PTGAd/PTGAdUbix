@@ -37,7 +37,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:PTGViewController.new];
     [self.window makeKeyAndVisible];
-    [self.splashAd loadAd];
     return YES;
 }
 
