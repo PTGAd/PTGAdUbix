@@ -690,10 +690,6 @@ banner广告加载示例：
     NSLog(@"插屏广告曝光%@",interstitialAd);
 }
 
-- (void)ptg_nativeExpresInterstitialAdVisibleFail:(PTGNativeExpressInterstitialAd *)interstitialAd error:(NSError *)error {
-    NSLog(@"插屏广告展示失败 error = %@",error);
-}
-
 - (void)ptg_nativeExpresInterstitialAdDidClick:(PTGNativeExpressInterstitialAd *)interstitialAd {
     NSLog(@"插屏广告被点击%@",interstitialAd);
 }

@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@class FancyMediaInfo;
+@class PTGMediaInfo;
 
 
 @interface PTGAdMaterial : NSObject
@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 素材 id
 @property(nonatomic,copy)NSString *materialId;
 /// 广告主图
-@property(nonatomic,strong)FancyMediaInfo *image;
+@property(nonatomic,strong)PTGMediaInfo *image;
 /// 广告标题  可能为空
 @property(nonatomic,copy)NSString *title;
 /// 广告描述  可能为空
@@ -29,8 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否是视频广告
 @property(nonatomic,assign)BOOL isVideo;
 /// 广告图片集合 用于多图信息流
-@property(nonatomic,copy)NSArray<FancyMediaInfo *> *images;
-@property(nonatomic,strong)FancyMediaInfo *videoAdInfo;
+@property(nonatomic,copy)NSArray<PTGMediaInfo *> *images;
+@property(nonatomic,strong)PTGMediaInfo *videoAdInfo;
 /// 点击按钮文案
 @property(nonatomic,copy)NSString *callToAction;
 /// icon url
