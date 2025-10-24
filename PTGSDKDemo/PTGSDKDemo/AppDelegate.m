@@ -30,7 +30,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     /// 主队列初始化
-    [PTGSDKManager syncSetAppKey:@"45271" appSecret:@"Y6yyc3zyP3EO9ol8"];
+    dispatch_async(dispatch_get_global_queue(0,0), ^{
+        [PTGSDKManager syncSetAppKey:@"45271" appSecret:@"Y6yyc3zyP3EO9ol8"];
+    });
+    
     [self.splashAd loadAd];
    
     [WXApi registerApp:@"wxd930ea5d5a258f4f" universalLink:@"https://help.wechat.com/sdksample/"];
